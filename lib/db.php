@@ -9,7 +9,7 @@
 
 
 try{
-    $dbh = new PDO('mysql:host=DBHOST;dbname=DBNAME', DBUSR, DBPSW);
+    $dblink = new PDO('mysql:host=DBHOST;dbname=DBNAME', DBUSR, DBPSW);
 } catch (Exception $ex) {
     echo 'error en la coneccion', $ex->getMessage(), "\n";
 }
